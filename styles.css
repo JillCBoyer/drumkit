@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./drums.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Oswald', sans-serif;
+    background-attachment: fixed;
+}
+
+.title {
+    font-family: 'Galada', cursive; 
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0 0 30px #D9F7F5;
+    color: #2C004B;
+    margin-top: 2rem;
+    line-height: 1;
+    letter-spacing: -0.05em;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0.01rem auto 0.5rem;
+    width: 50dvw;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+  
+.key {
+    border: 0.2rem solid #2C004B;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+    transition: all 0.07s ease;
+    width: 25%;
+    text-align: center;
+    color: #D9F7F5;
+    background:rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0 0.5rem black;
+    box-shadow: 0 0 10px black;    
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #A3F9F8;
+    box-shadow: 0 0 1rem #A3F9F8;
+    color: #2C004B;
+}
+
+kbd {
+    display: block;
+    font-size: 2.5rem;
+    border-bottom: 0.5px solid #A3F9F8;
+}
+
+.sound {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #A3F9F8;
+    font-weight: 700;
+    line-height: 0.5;
+}
+
+.openhat {
+    margin-bottom: 0;
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .title { 
+        font-size: 9rem;
+        margin-top: 6rem;
+    }
+
+    p {
+        font-size: 1.75rem;
+        margin: 1rem auto 2rem;
+    }
+
+    .keys {
+        gap: 1.5rem;
+    }
+
+    .sound {
+        font-size: 1.5rem;
+    }
+
+    kbd {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .title { 
+        font-size: 11rem;
+        margin-top: 6rem;
+    }
+
+    .keys {
+        margin-bottom: 3rem;
+        gap: 3rem;
+    }
+
+    .key {
+        width: 20%;
+    }
+}
+
+/* lg */
+ @media (min-width: 1024px) { 
+    .title { 
+        font-size: 15rem;
+        margin-top: 10rem;
+    }
+
+    p {
+        font-size: 2rem;
+        margin: 1rem auto 2rem;
+    }
+    .keys {
+        margin-bottom: 3rem;
+        gap: 3rem;
+    }
+
+    .key {
+        width: 15%;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .keys {
+    flex-wrap: none;
+    gap: 1rem;
+    }
+
+    .key {
+        max-width: 9%;
+    }
+} 
